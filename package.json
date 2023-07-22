@@ -1,0 +1,23 @@
+{
+  "name": "uiframework",
+  "version": "1.0.0",
+  "description": "Ui Framework By Nano",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cy:run:all": "cypress run --browser chrome",
+    "cy:run:test": "cypress run --browser chrome --spec cypress/e2e/Tests/testname.cy.js",
+    "cy:run:testcurso": "cypress run --browser chrome --spec cypress/e2e/Tests/Curso01.cy.js",
+    "cy:run:nanosite": "cypress run --browser chrome --spec cypress/e2e/Tests/NanoSite.cy.js",
+    "AmazonTestsWithRecord": "cypress run --browser chrome --record --spec cypress/e2e/Tests/Amazon.cy.js --key 05c1f0c8-8b51-4122-9ea1-1fc678454dea",
+    "AmazonTests": "cypress run --browser chrome --spec cypress/e2e/Tests/Amazon.cy.js",
+    "NanoSiteTests": "cypress run --browser chrome --spec cypress/e2e/Tests/NanoSite.cy.js",
+    "cy-report": "cypress run --browser chrome --headless --spec cypress/e2e/Amazon.cy.js"
+  },
+  "author": "Nano",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.2",
+    "cypress-mochawesome-reporter": "^3.5.1"
+  }
+}
